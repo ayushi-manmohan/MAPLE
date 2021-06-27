@@ -66,6 +66,24 @@
 .nav-item{
   font-size: 20px;
 }
+	    
+#jumbotron a{
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #111;
+  transition: all 0.3s ease;
+}
+
+#jumbotron a:hover{
+  color: #111;
+  background: none;
+}
 
 #SecondRow {
   text-align: center;
@@ -74,6 +92,77 @@
   font-family: 'Ubuntu', sans-serif;
   font-weight: bolder;
   font-size: 100%;
+}
+	    
+#about {
+    background-image: url("https://images.unsplash.com/photo-1592765213186-912a7504662d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJlaWdlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  background-position: center;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  padding-top: 80px;
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+  font-size: 150%;
+  font-weight: bolder;
+  padding-bottom: 80px;
+}
+
+#AboutRow {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+#aboutUs .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#aboutUs .about-content .left{
+    width: 45%;
+}
+
+#aboutUs .about-content .left img{
+    height:400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#aboutUs .about-content .right{
+    width: 55%;
+}
+
+#aboutUs .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#aboutUs .about-content .right p{
+    text-align: justify;
+}
+
+#aboutUs .about-content .right a{
+    display: inline-block;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #111;
+    transition: all 0.3s ease;
+}
+
+#aboutUs .about-content .right a:hover{
+    color: #111;
+    background: none;
 }
 
 #project {
@@ -260,7 +349,7 @@
         <p class="lead">A complete store for your Home Appliances and Furniture needs!</p>
         <hr class="my-4" style="color: transparent">
         <p id="info">The ultimate place where imagination meets reality!!!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+        <a href="#" style="text-decoration: none;">Explore!</a>
       </div>
 
       <!-- Section 2 bg-light-->
@@ -305,6 +394,41 @@
         </div>
         <!---->
       
+	  <!--About Us-->
+        <div id="about">
+          <div class="row">
+            <h1>About Us</h1>
+          </div>
+        </div>
+
+        <div class="container">
+          <div id="AboutRow">
+            <h2>Want to know who we are?</h2>
+          </div>
+        </div>
+
+        <div id="aboutUs">
+          <div class="container">
+            <div class="about-content row">
+              <div class="col-lg-6 left">
+                <img src="https://images.unsplash.com/photo-1561024172-0ae2ebd65018?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="about">
+              </div>
+              <div class="col-lg-6 right">
+                <div class="text">About Maple Company</div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit commodi rem labore ullam ut eveniet assumenda necessitatibus nesciunt vitae itaque esse, sunt quidem exercitationem voluptatem, quia, molestiae delectus ipsum veritatis beatae? Quam ab facilis accusamus, nam ad rerum provident eius iure deleniti delectus, quod aspernatur quis vel perferendis saepe! Fuga! esse accusantium, assumenda maiores libero eius nostrum impedit corrupti.
+                </p>
+                <br>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusamus iure, vel sed laboriosam culpa excepturi impedit modi, neque voluptatum eius repudiandae ex dolore cum, recusandae laudantium exercitationem nobis in tempore sit. Voluptates, saepe facere omnis et eaque iure eius. Quos repellendus eligendi voluptatibus dolore perferendis facilis quam a impedit.
+                </p>
+                <a href="#" style="text-decoration: none;">Explore!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+	  
         <!--Projects-->
         <div id="project">
           <div class="row">
@@ -440,11 +564,202 @@
     <!--Contact us-->
     <div id="contact">
       <div class="row">
-        <h1>Contact Us!</h1>
-        
+        <h1>Contact Us!</h1>  
       </div>
     </div>
   
+    <!--Footer-->
+    <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up to get our catalogue</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Sign Up
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="Footer-Links">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Navigation</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Project</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Services</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Find Furniture</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Living Rooms</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Dining Rooms</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Offices</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Outdoor and Patio</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Specials</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Find Home Appliances</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Refrigerators</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Washing Machines</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Air Purifiers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Kitchenware</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white" style="text-decoration: none;">Water Purifiers</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Service and Support</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <p>Customer Support</p>
+            </li>
+            <li>
+              <p>Phone No.: +91-9798100000</p>
+            </li>
+            <li>
+              <p>E-mail: The-Maple-Company@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-white" href="https://ayushi-manmohan.github.io/MAPLE/The-Maple-Company" style="text-decoration: none;">The-Maple-Company</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
   
   
     <!---->
