@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/73dc61bd9b.js" crossorigin="anonymous"></script>
+
+
+
+    <title>The Maple Company</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Roboto&display=swap');
+        </style>
+    <style>
+       
+       .jumbotron{
+          background-image: url(banner.jpg);
+          background-size: cover;
+          background-repeat: no-repeat; 
+          background-position: center center;
+          position: relative;
+			height: 100%;
+			text-align: center;
+			  padding-top: 10rem;
+			  padding-bottom: 10rem;
+			}
+
+            #header {
+  background: none;
+ /* border-bottom: 1px solid rgba(12, 11, 9, 0.2);*/
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 10px 0;
+  /*top: 40px;*/
+}
+#header.header-scrolled {
+  top: 0;
+  background: rgba(0, 0, 0, 0.85);
+ /* border-bottom: 1px solid #37332a;*/
+}
+
+#header .navbar-brand img {
+  width: 100px;
+}
+#logo{
+  color: white;
+  font-family: 'link href="//db.onlinewebfonts.com/c/d10afd0ad85bd0aad7fc329cce5269c5?family=Cassannet+Bold" rel="stylesheet" type="text/css"';
+  font-weight: bolder;
+  font-size: large;
+}
+
+#SecondRow {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+/*  font-family: Arial, Helvetica, sans-serif;*/
+  font-weight: bolder;
+  font-size: 100%;
+}
+
+#project {
+    background-image: url("https://images.unsplash.com/photo-1592765213186-912a7504662d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJlaWdlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  background-position: center;
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  padding-top: 80px;
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+  font-size: 150%;
+  font-weight: bolder;
+  padding-bottom: 80px;
+}
+
+#ProjectRow {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#BodyParts {
+ /* font-family: "Muli", sans-serif;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100vh;*/
+  overflow: hidden;
+  margin: 0;
+}
+.Container {
+  display: flex;
+  width: 90vw;
+  margin-top: 5px;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .Container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+#services {
+    background-image: url("https://images.unsplash.com/photo-1592765213186-912a7504662d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJlaWdlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  padding-top: 80px;
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+  font-size: 100%;
+  font-weight: bolder;
+  padding-bottom: 80px;
+}
+
+#ServiceRow {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.card {
+  background-color: ivory;
+  border: none;
+  color: black;
+  /* padding: 16px 32px;*/
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: black;
+  color: white;
+}
+
+#contact {
+  background-image: url("https://images.unsplash.com/photo-1592765213186-912a7504662d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJlaWdlfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+  padding-top: 80px;
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+  font-size: 100%;
+  font-weight: bolder;
+  padding-bottom: 80px;
+}
+
+    
+    </style>
+  </head>
+  <body style="background-color:ivory;">
+    <!-- Navbar  -->
+    <nav id ="header" class="navbar fixed-top navbar-expand-lg navbar-dark text-white p-md-3">
+      <div class="container">
+       <div id ="logo">MAPLE</div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Banner Image  -->
+    <div class="jumbotron" id="jumbotron">
+        <h1 class="display-4">THE MAPLE COMPANY</h1>
+        <p class="lead">A complete store for your Home Appliances and Furniture needs!</p>
+        <hr class="my-4" style="color: transparent">
+        <p id="info">The ultimate place where imagination meets reality!!!</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+      </div>
+
+      <!-- Section 2 bg-light-->
+
+    <div class="container">
+        <div class="row" id="SecondRow">
+          <h2>What we offer to our clients</h2>
+          </div>
+      </div>
+  
+      <div class="container" id="feature">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1572891086452-6183c0699139?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9tZSUyMGFwcGxpYW5jZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-hotel"></i> Perfectly Designed Furniture</h5>
+                <p class="card-text">We have the best Quality Furnitunes with latest designs for your home at affordable price.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG9tZSUyMGFwcGxpYW5jZXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-umbrella-beach"></i> Serene Scenery</h5>
+                <p class="card-text">You will be lost in your beautiful surroundings.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGFwcGxpYW5jZXxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-utensils"></i> Luscious Food</h5>
+                <p class="card-text">Experience the best of the delicacies.</p>
+              </div>
+            </div>
+          </div>
+         
+          </div>
+        </div>
+        <!---->
+      
+        <!--Projects-->
+        <div id="project">
+          <div class="row">
+            <h1>Projects</h1>
+            
+          </div>
+        </div>
+  
+        <div class="container">
+          <div id="ProjectRow">
+            <h2>Some of our recent projects!</h2>
+          </div>  
+        </div>   
+            <div id="BodyParts">
+              <div class="Container">
+             <div class="active panel" style="background-image: url('https://images.unsplash.com/photo-1617355186185-389cbb4e3416?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YWVzdGhldGljJTIwaG9tZSUyMGFwcGxpYW5jZXN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');">
+             <h3>Art Of Nature</h3>
+             </div>
+         
+             <div class="active panel" style="background-image: url('https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGFlc3RoZXRpYyUyMGhvbWUlMjBhcHBsaWFuY2VzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');">
+              <h3>Gorgeous Oceans</h3>
+              </div>  
+  
+             <div class="active panel" style="background-image: url('https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGFlc3RoZXRpYyUyMGhvbWUlMjBhcHBsaWFuY2VzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');">
+                 <h3>Beautiful Beach</h3>
+                 </div>
+             
+             <div class="active panel" style="background-image: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFlc3RoZXRpYyUyMGhvbWUlMjBhcHBsaWFuY2VzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');">
+                 <h3>Mighty Mountains</h3>
+                 </div>
+              
+                 
+             <div class="active panel" style="background-image: url('https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGFlc3RoZXRpYyUyMGhvbWUlMjBhcHBsaWFuY2VzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60');">
+                 <h3>Stunning Landscape</h3>
+                 </div>  
+              
+                 
+           </div>
+         </div>
+  
+            <script>
+              const panels= document.querySelectorAll('.panel');
+          
+          panels.forEach(panel => {
+              panel.addEventListener('click', () => {
+                  removeActiveClasses()
+                  panel.classList.add('active')
+              })
+          }
+          )
+          
+          function removeActiveClasses() {
+              panels.forEach(panel=>{
+                  panel.classList.remove('active')
+              })
+          }
+          </script>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  
+        <!---->
+  
+          <!--Services-->
+          <div id="services">
+            <div class="row">
+              <h1>Services</h1>
+              
+            </div>
+          </div>
+    
+          <div class="container">
+            <div id="ServiceRow">
+              <h2>What makes us best in the business!</h2>
+            </div>  
+          </div>
+  
+          <div class="container" id="feature">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-hotel"></i> Expert Technicians</h5>
+                    <p class="card-text">Computer users and programmers have become so accustomed to using Windows, even for the changing.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-umbrella-beach"></i> Professional Service</h5>
+                    <p class="card-text">Finding the perfect learning tool for Flash is a daunting task to any novice web developer. One can find help.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-utensils"></i> Great Support</h5>
+                    <p class="card-text"> While most people enjoy casino ambling, sports betting, lottery and bingo playing for the fun and excitement.</p>
+                  </div>
+                </div>
+              </div>
+             
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-hotel"></i> Afordable and Luxurious Hotels</h5>
+                        <p class="card-text">We will help you find the best Afordable hotels within your budget with all the facilities available.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-umbrella-beach"></i> Serene Scenery</h5>
+                        <p class="card-text">You will be lost in your beautiful surroundings.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title"><i class="fas fa-utensils"></i> Luscious Food</h5>
+                        <p class="card-text">Experience the best of the delicacies.</p>
+                      </div>
+                    </div>
+                  </div>
+                 
+              </div>
+            </div>
+  
+          <!---->
+    <!--Contact us-->
+    <div id="contact">
+      <div class="row">
+        <h1>Contact Us!</h1>
+        
+      </div>
+    </div>
+  
+  
+  
+    <!---->
+  
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+      </script>
+    </body>
+  </html>
